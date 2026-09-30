@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
+html {
+    background-color: #1a365d;
+}
+
 body {
     background-color: #e6e6e6;
     display: flex;
