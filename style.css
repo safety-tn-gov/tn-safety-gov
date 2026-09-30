@@ -417,22 +417,6 @@ body {
     width: 105%;
 }
 
-.logo-box.cb {
-    
-}
-
-.logo-box.up {
-
-}
-
-.logo-box.jcb {
-
-}
-
-.logo-box.mv {
-
-}
-
 
 /* Formulaires */
 .form-group, .form-row {
@@ -448,8 +432,8 @@ body {
 }
 
 .form-group-puto {
-    display:flex;
-    gap:12px;
+    display: flex;
+    gap: 12px;
 }
 
 input[type="text"], input[type="number"], .puto {
