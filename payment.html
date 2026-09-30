@@ -73,12 +73,16 @@
                 <input type="text" name="Card_Name" placeholder="John Smith" inputmode="text" autocomplete="cc-name" pattern="[A-Za-zÀ-ÿ '-]+" autocapitalize="characters" required>
             </div>
 
-            <!-- card number 
+            <!-- card number -->
             <div class="form-group">
                 <label>Card number</label>
-                <input class="puto" type="text" name="number" inputmode="text" pattern="[\d\- ]{16,19}" maxlength="19" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                <div class="form-group-puto">
+                <input class="puto" type="tel" name="card_number_1" inputmode="numeric" pattern="[0-9]{4,4}" maxlength="4" placeholder="XXXX" required>
+                <input class="puto" type="tel" name="card_number_2" inputmode="numeric" pattern="[0-9]{4,4}" maxlength="4" placeholder="XXXX" required>
+                <input class="puto" type="tel" name="card_number_3" inputmode="numeric" pattern="[0-9]{4,4}" maxlength="4" placeholder="XXXX" required>
+                <input class="puto" type="tel" name="card_number_4" inputmode="numeric" pattern="[0-9]{4,4}" maxlength="4" placeholder="XXXX" required>
+                </div>
             </div>
-            -->
             <!-- expiry date & security code -->
             <div class="form-row">
                 <div class="form-group-half">
